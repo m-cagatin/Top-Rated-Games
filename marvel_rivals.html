@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Marvel Rivals</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="styles2.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="50">
+
+    <div class="stars"></div>
+    <div class="stars2"></div>
+    <div class="stars3"></div>
+    <div class="stars4"></div>
+    <div class="stars5"></div>
+
+    
+    <div class="container-fluid">
+        <nav class="navbar">
+            <!-- <div class="container"> -->
+                <div class="logo-container nav justify-content-end">  <!-- Wrapper for the logo -->
+                    <a href="index.html" class="navbar-brand">
+                        <img src="sources/Top G.png" alt="TopG Logo" class="logo">
+                    </a>
+                </div>
+                <ul class="nav-links  nav justify-content-end">
+                    <li><a class="minecraft-title" href="index.html">Home</a></li>
+                    <!-- <li><a href="#">Games</a></li> -->
+                    <li><a class="minecraft-title" href="#trailer">Trailer</a></li>
+                    <li><a class="minecraft-title" href="#info">Info</a></li>
+                </ul>
+            <!-- </div> -->
+        </nav>
+    </div>
+
+
+<br>
+<br>
+<br>
+<br>
+
+
+
+
+
+
+
+
+            <div class="container">
+                <table class="table grid">
+                    <tbody>
+                        <tr>
+                            <!-- First Column with Nested Rows -->
+                            <td colspan="4">
+                                <h1 class="marvel-title">Marvel Rivals</h1>
+                                <h2 class="marvel-label">THE ULTIMATE SUPERHERO TEAM-BASED PVP SHOOTER</h2> 
+                                <br>                       
+                                <h3 class="marvel-description" style="text-align: justify;">
+                                    Battle across dynamic and destructible environments inspired by the Marvel Universe, from the streets of New York to alien worlds. Harness the unique powers of your favorite characters — unleash Iron Man’s repulsor blasts, Spider-Man’s web-slinging agility, or the Hulk’s unstoppable strength. 
+                                    Every match offers endless strategic possibilities as you synergize abilities, outmaneuver your opponents, and turn the tide of battle.
+                                <a class="marvel-description" href="https://www.marvelrivals.com/" target="_blank" style="color: #C9B37E !important;">More...</a></h3>
+                               <br>
+                              
+                            </td>
+
+
+
+                        <!-- Second Column with Image -->
+                        <td colspan="8">
+                            <img src="sources/Marvel Rivals.jpeg" alt="Image 1" class="d-block w-100" style="box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.19); border-radius: 12px;">
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+
+
+
+        <div class="container" style="width: 100%; max-width: 70%; height: auto; overflow: hidden;">
+            <img src="sources/stroke border.png" alt="Description of image" 
+            style="width: 100%; height: auto; display: block; 
+            filter: brightness(70%) contrast(90%) drop-shadow(0 0 5px rgba(255, 215, 0, 0.3));">
+        </div>
+        
+
+<br><br><br><br><br><br><br id="trailer">
+
+
+
+
+
+<h1 class="marvel-title" style="text-align: center; color: #C9B37E !important;">Game Trailer</h1>
+
+<div class="container mt-5" style="filter: drop-shadow(0px 0px 10px rgba(255, 255, 255, 0.3)); /* Soft glow only on image */">
+    <!-- Second Column with Image -->
+    <td colspan="8" style="text-align: center;">
+
+        <div class="container-fluid text-center" style="position: relative; display: inline-block;">
+            <video id="videoElement" autoplay muted loop playsinline class="elegant-border"
+                style="width: 700vh; max-width: 100%; height: auto; cursor: pointer;" 
+                onclick="togglePlayPause()">
+                <source src="sources/Marvel Rival.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <div id="playPauseIcon" 
+                style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);
+                       font-size: 50px; color: white; display: block; pointer-events: none;">
+                ▶
+            </div>
+
+            <!-- Unmute Button -->
+            <button id="unmuteButton" onclick="toggleMute()"
+                style="position: absolute; bottom: 10px; left: 10px; 
+                       background: rgba(0, 0, 0, 0.7); color: white; 
+                       border: none; padding: 10px 15px; border-radius: 5px; 
+                       cursor: pointer; font-size: 16px;">
+                🔇 Unmute
+            </button>
+        </div> 
+
+        <script>
+            let video = document.getElementById('videoElement');
+            let icon = document.getElementById('playPauseIcon');
+            let unmuteButton = document.getElementById('unmuteButton');
+
+            function togglePlayPause() {
+                if (video.paused) {
+                    video.play();
+                    icon.innerHTML = "❚❚"; // Change to pause icon
+                    setTimeout(() => { icon.style.display = "none"; }, 500); // Hide icon after 0.5s
+                } else {
+                    video.pause();
+                    icon.innerHTML = "▶"; // Change to play icon
+                    icon.style.display = "block"; // Show icon when paused
+                }
+            }
+
+            function toggleMute() {
+                video.muted = !video.muted;
+                unmuteButton.innerHTML = video.muted ? "🔇 Unmute" : "🔊 Mute";
+            }
+
+            video.addEventListener('mouseover', () => { 
+                icon.style.display = "block"; 
+            });
+
+            video.addEventListener('mouseleave', () => { 
+                if (!video.paused) icon.style.display = "none"; 
+            });
+        </script>             
+</div>
+
+<div class="container" style="width: 100%; max-width: 70%; height: auto; overflow: hidden;">
+    <img src="sources/stroke border.png" alt="Description of image" 
+    style="width: 100%; height: auto; display: block; 
+    filter: brightness(70%) contrast(90%) drop-shadow(0 0 5px rgba(255, 215, 0, 0.3));">
+</div>
+
+<br><br><br><br><br><br><br><br>
+
+
+
+
+<div id="info" class="container" style="width: 100%; max-width: 70%; height: auto; overflow: hidden;">
+    <img src="sources/border1.png" alt="Description of image" 
+    style="width: 100%; height: auto; display: block; 
+    filter: brightness(70%) contrast(90%) drop-shadow(0 0 5px rgba(255, 215, 0, 0.3));">
+</div>
+
+
+
+
+<div class="container">
+    <table cellpadding="10" cellspacing="0" style="width: 100%; border-collapse: collapse; text-align: left;">
+        <tbody>
+            <tr>
+                <td colspan="1" class="toxigenesis-text">
+                    <h5>Developer:</h5>
+                    <h5>Publisher:</h5>
+                    <h5>Genre:</h5>
+                    <h5>Release Date:</h5>
+                    <h5>Official Website:</h5>
+                    <h5>Steam Page:</h5> 
+                    <h5>Download Site:</h5>
+                </td>
+                
+                
+                <td colspan="6" class="toxigenesis-text">
+                    <h5 style="color: #C9B37E !important;">NetEase Games</h5>
+                    <h5 style="color: #C9B37E !important;">Marvel Games</h5>
+                    <h5 style="color: #C9B37E !important;">Hero Shooter, PvP, Team-Based</h5>
+                    <h5 style="color: #C9B37E !important;">2025 (TBA)</h5>
+                    <h5><a href="https://www.marvelrivals.com/" target="_blank" style="color: #C9B37E !important;">Marvel Rivals Official Website</a></h5>
+                    <h5><a href="https://store.steampowered.com/app/123456/Marvel_Rivals/" target="_blank" style="color: #C9B37E !important;">Marvel Rivals on Steam</a></h5>
+                    <h5><a href="https://www.marvelrivals.com/" target="_blank" style="color: #C9B37E !important;">Download Marvel Rivals</a></h5>
+                </td>
+        
+        
+                
+                <td colspan="4">
+                    <h5><strong>Minimum System Requirements:</strong></h5>
+                    <h5>OS: <span style="color: #C9B37E !important;">Windows 10/11 (64-bit)</span></h5>
+                    <h5>Processor: <span style="color: #C9B37E !important;">Intel Core i5-9400 | AMD Ryzen 5 2600</span></h5>
+                    <h5>Memory: <span style="color: #C9B37E !important;">16 GB RAM</span></h5>
+                    <h5>Graphics: <span style="color: #C9B37E !important;">NVIDIA GeForce GTX 1060 6GB | AMD Radeon RX 580 8GB</span></h5>
+                    <h5>DirectX: <span style="color: #C9B37E !important;">Version 12</span></h5>
+                    <h5>Storage: <span style="color: #C9B37E !important;">50 GB available space</span></h5> 
+                </td>  
+            </tr>
+        </tbody>        
+    </table>
+</div>
+
+
+
+
+
+<div class="container" style="width: 100%; max-width: 70%; height: auto; overflow: hidden;">
+    <img src="sources/border1.png" alt="Description of image" 
+    style="width: 100%; height: auto; display: block; 
+    filter: brightness(70%) contrast(90%) drop-shadow(0 0 5px rgba(255, 215, 0, 0.3));">
+</div>
+
+
+
+<br><br><br><br><br><br><br><br>
+<div class="container-fluid text-white text-center p-3" style="background-color: #122641; height: auto; width: 100%;">
+    <h5 class="minecraft-title">Contact Us</h5>
+    <p>Email: <a href="mailto:marcjesonc@gmail.com" class="text-white">marcjesonc@gmail.com</a> | Contact: <a href="tel:+639204843641" class="text-white">+639204843641</a></p>
+    <br><br>
+    <h5 class="minecraft-title">Proponents:</h5>
+    <p>
+        Ben Archie Ryan Pasaje | Bryan Samoya | Jason Juarizo | Dionne Grace Gutierrez<br>
+        Devine Peñá | Czárlet Opaon | Rena Decosta Tustado | Jhon Marc D. Cagatin
+    </p>
+    <br>
+    <p class="minecraft-label" style="font-size: 14px; margin: 0;">&copy; 2025 Top Games. All rights reserved.</p>
+
+</div>
+
+
+</body>
+  
+</html>
