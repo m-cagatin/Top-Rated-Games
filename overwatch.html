@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Overwatch</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="styles2.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="50">
+
+    <div class="stars"></div>
+    <div class="stars2"></div>
+    <div class="stars3"></div>
+    <div class="stars4"></div>
+    <div class="stars5"></div>
+
+    
+    <div class="container-fluid" style="z-index: 9999; position: relative;">
+        <nav class="navbar">
+            <div class="logo-container nav justify-content-end">
+                <a href="index.html" class="navbar-brand">
+                    <img src="sources/Top G.png" alt="TopG Logo" class="logo">
+                </a>
+            </div>
+            <ul class="nav-links nav justify-content-end">
+                <li><a class="minecraft-title" href="index.html">Home</a></li>
+                <li><a class="minecraft-title" href="#trailer">Trailer</a></li>
+                <li><a class="minecraft-title" href="#info">Info</a></li>
+                <li class="dropdown">
+                    <a class="minecraft-title dropdown-toggle" 
+                       href="#" role="button" 
+                       data-bs-toggle="dropdown" 
+                       aria-expanded="false">
+                        Games
+                    </a>
+                    <ul class="dropdown-menu minecraft-description" style="z-index: 10000; position: absolute;">
+                        <li><a style="font-size: 14px !important;" class="dropdown-item" href="elden_ring.html">Elden Ring</a></li>
+                        <li><a style="font-size: 14px !important;" class="dropdown-item" href="marvel_rivals.html">Marvel Rivals</a></li>
+                        <li><a style="font-size: 14px !important;" class="dropdown-item" href="minecraft.html">Minecraft</a></li>
+                        <li><a style="font-size: 14px !important;" class="dropdown-item" href="roblox.html">Roblox</a></li>
+                        <li><a style="font-size: 14px !important;" class="dropdown-item" href="overwatch.html">Overwatch</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    
+
+<br>
+<br>
+<br>
+<br>
+
+
+
+
+
+
+
+
+            <div class="container">
+                <table class="table grid">
+                    <tbody>
+                        <tr>
+                            <!-- First Column with Nested Rows -->
+                            <td colspan="4">
+                                <h1 class="overwatch-title">Overwatch</h1>
+                                <h2 class="overwatch-label">TEAM UP AND FIGHT FOR THE FUTURE</h2> 
+                                <br>     
+                                <h3 class="overwatch-description" style="text-align: justify;">
+                                    Overwatch is a team-based, first-person shooter (FPS) developed by Blizzard Entertainment, where players choose from a diverse roster of heroes, 
+                                    each with unique abilities and roles — damage, tank, or support. Teams of six compete in objective-based game modes like capture the point or escort the payload. 
+                                        <a class="marvel-description" href="https://overwatch.blizzard.com/" target="_blank" style="color: #C9B37E !important;">More Info...</a></h3>
+
+    
+                               <br>
+                              
+                            </td>
+
+
+
+                        <!-- Second Column with Image -->
+                        <td colspan="8">
+                            <img src="sources/overwatch char 2.png" alt="Image 1" class="d-block w-70" style="filter: drop-shadow(3px 3px 5px #5c5c5cb3); margin-top: -100px; margin-left: -100px;">
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+
+
+
+        
+        
+
+<br><br><br><br><br><br><br id="trailer">
+
+
+
+
+
+<h1 class="overwatch-title" style="text-align: center;">Game Trailer</h1>
+
+<div class="container mt-5" style="filter: drop-shadow(0px 0px 10px rgba(255, 255, 255, 0.3)); /* Soft glow only on image */">
+    <!-- Second Column with Image -->
+    <td colspan="8" style="text-align: center;">
+
+        <div class="container-fluid text-center" style="position: relative; display: inline-block;">
+            <video id="videoElement" autoplay muted loop playsinline class="elegant-border"
+                style="width: 700vh; max-width: 100%; height: auto; cursor: pointer;" 
+                onclick="togglePlayPause()">
+                <source src="sources/Overwatch 2 Gameplay Trailer.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <div id="playPauseIcon" 
+                style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);
+                       font-size: 50px; color: white; display: block; pointer-events: none;">
+                ▶
+            </div>
+
+            <!-- Unmute Button -->
+            <button id="unmuteButton" onclick="toggleMute()"
+                style="position: absolute; bottom: 10px; left: 10px; 
+                       background: rgba(0, 0, 0, 0.7); color: white; 
+                       border: none; padding: 10px 15px; border-radius: 5px; 
+                       cursor: pointer; font-size: 16px;">
+                🔇 Unmute
+            </button>
+        </div> 
+
+        <script>
+            let video = document.getElementById('videoElement');
+            let icon = document.getElementById('playPauseIcon');
+            let unmuteButton = document.getElementById('unmuteButton');
+
+            function togglePlayPause() {
+                if (video.paused) {
+                    video.play();
+                    icon.innerHTML = "❚❚"; // Change to pause icon
+                    setTimeout(() => { icon.style.display = "none"; }, 500); // Hide icon after 0.5s
+                } else {
+                    video.pause();
+                    icon.innerHTML = "▶"; // Change to play icon
+                    icon.style.display = "block"; // Show icon when paused
+                }
+            }
+
+            function toggleMute() {
+                video.muted = !video.muted;
+                unmuteButton.innerHTML = video.muted ? "🔇 Unmute" : "🔊 Mute";
+            }
+
+            video.addEventListener('mouseover', () => { 
+                icon.style.display = "block"; 
+            });
+
+            video.addEventListener('mouseleave', () => { 
+                if (!video.paused) icon.style.display = "none"; 
+            });
+        </script>             
+</div>
+
+<div class="container" style="display: flex; justify-content: center; align-items: center; overflow: hidden;">
+    <img src="sources/border4.png" style="max-width: 100%; max-height: 100%; object-fit: contain;">
+</div>
+
+
+<br><br><br><br><br><br><br><br>
+
+
+
+
+<div class="container">
+    <hr style="height: 5px; background-color: #f99e1a; border: none; opacity: 1;">
+ </div>
+<div class="container">
+    <table cellpadding="10" cellspacing="0" style="width: 100%; border-collapse: collapse; text-align: left;">
+        <tbody>
+
+
+            <tr>
+                <td colspan="1" class="toxigenesis-text">
+                    <h5 class="overwatch-label" style="font-size: 13px !important;">Developer:</h5>
+                    <h5 class="overwatch-label" style="font-size: 13px !important;">Publisher:</h5>
+                    <h5 class="overwatch-label" style="font-size: 13px !important;">Genre:</h5>
+                    <h5 class="overwatch-label" style="font-size: 13px !important;">Release Date:</h5>
+                    <h5 class="overwatch-label" style="font-size: 13px !important;">Official Website:</h5>
+                    <h5 class="overwatch-label" style="font-size: 13px !important;">Download Site:</h5>
+                </td>
+                    
+                    
+                <td colspan="6" class="toxigenesis-text">
+                    <h5 class="overwatch-label" style="color: #C9B37E !important; font-size: 13px !important;">Blizzard Entertainment</h5>
+                    <h5 class="overwatch-label" style="color: #C9B37E !important; font-size: 13px !important;">Blizzard Entertainment</h5>
+                    <h5 class="overwatch-label" style="color: #C9B37E !important; font-size: 13px !important;">First-person Shooter (FPS), Team-Based</h5>
+                    <h5 class="overwatch-label" style="color: #C9B37E !important; font-size: 13px !important;">May 24, 2016</h5>
+                    <h5 class="overwatch-label"><a href="https://overwatch.blizzard.com/" target="_blank" style="color: #C9B37E !important;">Overwatch Official Website</a></h5>
+                    <h5 class="overwatch-label"><a href="https://overwatch.blizzard.com/" target="_blank" style="color: #C9B37E !important;">Overwatch Download Page</a></h5>
+                </td>
+        
+        
+                
+                <td colspan="4">
+                    <h5 class="overwatch-label" style="font-size: 16px;">Minimum System Requirements:</h5>
+                    <span class="overwatch-description">
+                        <h5 class="overwatch-label" style="font-size: 13px !important;">OS: <span style="color: #C9B37E !important; font-size: 13px !important;">Windows 10/11 64-bit</span></h5>
+                        <h5 class="overwatch-label" style="font-size: 13px !important;">Processor: <span style="color: #C9B37E !important; font-size: 13px !important;">Intel Core i3 or AMD Phenom X3 8650</span></h5>
+                        <h5 class="overwatch-label" style="font-size: 13px !important;">Memory: <span style="color: #C9B37E !important; font-size: 13px !important;">6 GB RAM</span></h5>
+                        <h5 class="overwatch-label" style="font-size: 13px !important;">Graphics: <span style="color: #C9B37E !important; font-size: 13px !important;">NVIDIA GeForce GTX 600 / AMD Radeon HD 7000</span></h5>
+                        <h5 class="overwatch-label" style="font-size: 13px !important;">DirectX: <span style="color: #C9B37E !important; font-size: 13px !important;">Version 11</span></h5>
+                        <h5 class="overwatch-label" style="font-size: 13px !important;">Storage: <span style="color: #C9B37E !important; font-size: 13px !important;">50 GB available space</span></h5> 
+                    </span>
+                    
+                </td>  
+            </tr>
+        
+        
+        </tbody>
+        
+    </table>
+</div>
+<div class="container">
+    <hr style="height: 5px; background-color: #f99e1a; border: none; opacity: 1;">
+ </div>
+ 
+ 
+
+
+
+<br><br><br><br><br><br><br><br>
+<div class="container-fluid text-white text-center p-3" style="background-color: #122641; height: auto; width: 100%;">
+    <h5 class="minecraft-title">Contact Us</h5>
+    <p>Email: <a href="mailto:marcjesonc@gmail.com" class="text-white">marcjesonc@gmail.com</a> | Contact: <a href="tel:+639204843641" class="text-white">+639204843641</a></p>
+    <br><br>
+    <h5 class="minecraft-title">Proponents:</h5>
+    <p>
+        Ben Archie Ryan Pasaje | Bryan Samoya | Jason Juarizo | Dionne Grace Gutierrez<br>
+        Devine Peñá | Czárlet Opaon | Rena Decosta Tustado | Jhon Marc D. Cagatin
+    </p>
+    <br>
+    <p class="minecraft-label" style="font-size: 14px; margin: 0;">&copy; 2025 Top Games. All rights reserved.</p>
+
+</div>
+
+
+</body>
+  
+</html>

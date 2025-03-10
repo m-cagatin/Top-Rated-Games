@@ -1,3 +1,16 @@
+/* ================================================================================================================ */
+/* Importing Overwatch-Like Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@600&display=swap');
+
+
+/* ================================================================================================================ */
+/* Importing Roblox-Like Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@700&display=swap');
+
 
 /* ================================================================================================================ */
 /* Importing Marvel-Like Fonts */
@@ -5,9 +18,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&display=swap');
 
+
+
 /* ================================================================================================================ */
 @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=EB+Garamond:ital@1&display=swap');
 
+
+
+/* ================================================================================================================ */
 
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 
@@ -76,7 +94,7 @@ color: #C9B37E !important;
 .marvel-title {
     font-family: 'Bangers', cursive;
     font-size: 64px;
-    color: #e9654d !important; /* Marvel red color */
+    color: #fc2a57 !important; /* Marvel red color */
     text-transform: uppercase;
     letter-spacing: 3px;
     text-shadow: 3px 3px 0px #000000, 5px 5px 0px #000000;
@@ -122,6 +140,200 @@ color: #C9B37E !important;
 
 
 
+
+
+
+/* Roblox Title Font */
+.roblox-title {
+    font-family: 'Luckiest Guy', cursive;
+    font-size: 64px;
+    color: #ff0000; /* Roblox red color */
+    text-transform: uppercase;
+    text-shadow: 4px 4px 0px #000000, 6px 6px 0px #000000;
+    letter-spacing: 3px;
+}
+
+/* Roblox Description Font */
+.roblox-description {
+    font-family: 'Baloo 2', sans-serif;
+    font-size: 18px;
+    color: #FFFFFF;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+/* Roblox Label Font (for small labels like: "Play", "Store", "Game Modes") */
+.roblox-label {
+    font-family: 'Fredoka', sans-serif;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #ffa500; /* Roblox-style gold accent */
+    letter-spacing: 2px;
+}
+
+/* Roblox Button Styles */
+.roblox-button {
+    font-family: 'Fredoka', sans-serif;
+    font-size: 16px;
+    background-color: #ff0000;
+    color: #FFFFFF;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 4px;
+    text-transform: uppercase;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+
+.roblox-button:hover {
+    background-color: #cc0000;
+    transform: scale(1.05);
+}
+
+/* Roblox Currency Label */
+.roblox-currency {
+    font-family: 'Fredoka', sans-serif;
+    font-size: 16px;
+    color: #00c300; /* Roblox green for currency */
+    font-weight: bold;
+}
+
+/* Roblox Game Mode Title */
+.roblox-game-mode {
+    font-family: 'Luckiest Guy', cursive;
+    font-size: 36px;
+    color: #ff0000;
+    text-transform: uppercase;
+    text-shadow: 3px 3px 0px #000000;
+}
+
+/* Roblox Store Section */
+.roblox-store-section {
+    font-family: 'Baloo 2', sans-serif;
+    font-size: 18px;
+    color: #f0f0f0;
+    text-align: center;
+    padding: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+/* Overwatch Title Font */
+.overwatch-title {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 70px;
+    color: #f99e1a !important; /* Overwatch orange color */
+    text-transform: uppercase;
+    text-shadow: 4px 4px 0px #000000;
+    letter-spacing: 3px;
+}
+
+/* Overwatch Subtitle Font */
+.overwatch-subtitle {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 32px;
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* Overwatch Description Font */
+.overwatch-description {
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 18px;
+    color: #d8d8d8;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+/* Overwatch Label Font (for tags like: "Attack", "Defense", "Support") */
+.overwatch-label {
+    font-family: 'Oxanium', sans-serif;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: #f99e1a;
+    letter-spacing: 2px;
+}
+
+/* Overwatch Button Styles */
+.overwatch-button {
+    font-family: 'Oxanium', sans-serif;
+    font-size: 18px;
+    background-color: #f99e1a;
+    color: #000000;
+    padding: 14px 28px;
+    border: none;
+    border-radius: 6px;
+    text-transform: uppercase;
+    transition: all 0.3s;
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.overwatch-button:hover {
+    background-color: #e58700;
+    transform: scale(1.05);
+}
+
+/* Overwatch Health Bar Label */
+.overwatch-health {
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 16px;
+    color: #00ff00;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+/* Overwatch Ultimate Charge Label */
+.overwatch-ultimate {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 20px;
+    color: #f99e1a;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 0px #000000;
+}
+
+/* Overwatch Team Role Text (Tank, Damage, Support) */
+.overwatch-role {
+    font-family: 'Oxanium', sans-serif;
+    font-size: 18px;
+    text-transform: uppercase;
+    color: #f99e1a;
+    letter-spacing: 2px;
+}
+
+/* Overwatch Kill Feed Text */
+.overwatch-killfeed {
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 14px;
+    color: #ff4b4b;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+/* Overwatch In-Game Timer */
+.overwatch-timer {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 36px;
+    color: #ffffff;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+/* Overwatch Currency Text */
+.overwatch-currency {
+    font-family: 'Oxanium', sans-serif;
+    font-size: 16px;
+    color: #ffd700;
+    font-weight: bold;
+}
 /* ================================================================================================================ */
 
 
@@ -231,6 +443,23 @@ body, h1, h2, h3, h4, h5, h6, p, span, div, a, button, label, input, textarea {
         margin: 5px 0;
     }
 }
+
+
+
+    .dropdown-menu {
+        background-color: transparent;
+        border: none;
+        box-shadow: none;
+    }
+
+    .dropdown-item {
+        color: white; /* Adjust text color */
+    }
+
+    .dropdown-item:hover {
+        background-color: transparent;
+        text-decoration: underline;
+    }
 
 
 

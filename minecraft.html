@@ -18,23 +18,36 @@
     <div class="stars5"></div>
 
     
-    <div class="container-fluid">
+    <div class="container-fluid" style="z-index: 9999; position: relative;">
         <nav class="navbar">
-            <!-- <div class="container"> -->
-                <div class="logo-container nav justify-content-end">  <!-- Wrapper for the logo -->
-                    <a href="index.html" class="navbar-brand">
-                        <img src="sources/Top G.png" alt="TopG Logo" class="logo">
+            <div class="logo-container nav justify-content-end">
+                <a href="index.html" class="navbar-brand">
+                    <img src="sources/Top G.png" alt="TopG Logo" class="logo">
+                </a>
+            </div>
+            <ul class="nav-links nav justify-content-end">
+                <li><a class="minecraft-title" href="index.html">Home</a></li>
+                <li><a class="minecraft-title" href="#trailer">Trailer</a></li>
+                <li><a class="minecraft-title" href="#info">Info</a></li>
+                <li class="dropdown">
+                    <a class="minecraft-title dropdown-toggle" 
+                       href="#" role="button" 
+                       data-bs-toggle="dropdown" 
+                       aria-expanded="false">
+                        Games
                     </a>
-                </div>
-                <ul class="nav-links  nav justify-content-end">
-                    <li><a class="minecraft-title" href="index.html">Home</a></li>
-                    <!-- <li><a href="#">Games</a></li> -->
-                    <li><a class="minecraft-title" href="#trailer">Trailer</a></li>
-                    <li><a class="minecraft-title" href="#info">Info</a></li>
-                </ul>
-            <!-- </div> -->
+                    <ul class="dropdown-menu minecraft-description" style="z-index: 10000; position: absolute;">
+                        <li><a style="font-size: 14px !important;" class="dropdown-item" href="elden_ring.html">Elden Ring</a></li>
+                        <li><a style="font-size: 14px !important;" class="dropdown-item" href="marvel_rivals.html">Marvel Rivals</a></li>
+                        <li><a style="font-size: 14px !important;" class="dropdown-item" href="minecraft.html">Minecraft</a></li>
+                        <li><a style="font-size: 14px !important;" class="dropdown-item" href="roblox.html">Roblox</a></li>
+                        <li><a style="font-size: 14px !important;" class="dropdown-item" href="overwatch.html">Overwatch</a></li>
+                    </ul>
+                </li>
+            </ul>
         </nav>
     </div>
+    
 
 
 <br>
@@ -62,8 +75,8 @@
                                 <br><br>            
                                 
                                 <h3 class="minecraft-description" style="text-align: justify;">
-                                    Dive into a vast, blocky world where your imagination is the only limit. Gather resources, build incredible structures, and craft tools to survive against monsters that roam the night. 
-                                    Explore endless landscapes, from deep caves to towering mountains, or team up with friends to embark on epic adventures.
+                                    Minecraft is an open-world sandbox game where players can explore, build, and survive in a blocky, procedurally-generated 3D world. It offers two main modes: Survival, 
+                                    where you gather resources, craft tools, and fend off dangerous creatures, and Creative, where you have unlimited resources to build anything you can imagine.
                                         <a class="minecraft-description" href="https://www.minecraft.net/" target="_blank" style="color: #8afffb !important;">More...</a></h3>
 
     
@@ -177,7 +190,7 @@
 </div>
 
 
-<div class="container">
+<div class="container" id="info">
     <table cellpadding="10" cellspacing="0" style="width: 100%; border-collapse: collapse; text-align: left;">
         <tbody>
 
