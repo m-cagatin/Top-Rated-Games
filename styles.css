@@ -178,6 +178,21 @@ body, h1, h2, h3, h4, h5, h6, p, span, div, a, button, label, input, textarea {
 
 
 
+.dropdown-menu {
+    background-color: transparent;
+    border: none;
+    box-shadow: none;
+}
+
+.dropdown-item {
+    color: white; /* Adjust text color */
+}
+
+.dropdown-item:hover {
+    background-color: transparent;
+    text-decoration: underline;
+}
+
 /* ================================================================================================================ */
 
 
